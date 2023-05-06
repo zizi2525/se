@@ -27,4 +27,4 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        python uvicorn se:app --reload
+         uvicorn se:app --reload
