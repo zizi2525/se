@@ -6,6 +6,7 @@ from datetime import datetime, timedelta
 from fastapi.middleware.cors import CORSMiddleware
 import pytz
 from tinydb import TinyDB, Query
+import uvicorn
 app = FastAPI()
 origins = [
     "http://localhost.tiangolo.com",
@@ -334,7 +335,9 @@ def get_player(match_id):
    
    print(source)
    return {"cdn":matches}
-    
+
+
+uvicorn.run(app ,port=80,)
     
     
   
