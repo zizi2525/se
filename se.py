@@ -337,7 +337,7 @@ def get_player(match_id):
    return {"cdn":matches}
 
 
-uvicorn.run(app ,port=80,)
+uvicorn.run(app)
     
     
   
